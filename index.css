@@ -1,0 +1,53 @@
+/* selector universal, se identifca por el caracter * */
+/* se comporta de dos maneras
+    globalmente
+    localmente
+*/
+
+* {
+    /* afecta a todo el documento */
+    margin: 0;
+}
+
+body {
+    margin: 8px 16px 8px 16px; /* top right bottom left */
+    /* margin-top: 8px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    margin-left: 16px; */
+}
+
+/* selector de id se identifica por el caracter # */
+
+#container {
+    /* asignación de estilos */
+    /* nombrepropiedad : valorpropiedad ; */
+    /* background-color: rgb(98, 45, 9); red, green, blue - 0 a 255 */
+    background-color: gray; /*hexadecimales*/
+    font-size: 24px;
+    display: inline-block;
+}
+
+/* selector de tag */
+
+/* nav div {
+    display: inline-block;
+} */
+
+/* selector universal anidado */
+
+nav {
+    padding: 4px;/* top right bottom left */
+}
+
+nav * {
+    /* afectar a cualquier elemento dentro de la nav */
+    display: inline-block;
+    margin: 0 2px;/* top right bottom left */
+}
+
+
+/* selector de clase, se identifica por caracter . */
+/* .option {
+    display: inline-block;
+} */
