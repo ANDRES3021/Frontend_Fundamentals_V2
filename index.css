@@ -26,6 +26,7 @@ body {
     background-color: gray; /*hexadecimales*/
     font-size: 24px;
     display: inline-block;
+    width: 100%;
 }
 
 /* selector de tag */
@@ -38,12 +39,22 @@ body {
 
 nav {
     padding: 4px;/* top right bottom left */
+    display: flex;
+    column-gap: 16px;
+    justify-content: space-evenly;
 }
 
 nav * {
     /* afectar a cualquier elemento dentro de la nav */
     display: inline-block;
     margin: 0 2px;/* top right bottom left */
+    background-color: bisque;
+}
+
+nav *:hover {
+    /* afectar a cualquier elemento dentro de la nav */
+    flex-grow: 1;
+    text-align: center;
 }
 
 
@@ -51,3 +62,11 @@ nav * {
 /* .option {
     display: inline-block;
 } */
+
+.alineado {
+    order: 4;
+}
+
+.segundo {
+    order: -1;
+}
