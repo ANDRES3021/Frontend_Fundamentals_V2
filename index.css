@@ -25,7 +25,7 @@ body {
     /* background-color: rgb(98, 45, 9); red, green, blue - 0 a 255 */
     background-color: gray; /*hexadecimales*/
     font-size: 24px;
-    display: inline-block;
+    /*display: inline-block;*/
     width: 100%;
 }
 
@@ -48,7 +48,7 @@ nav * {
     /* afectar a cualquier elemento dentro de la nav */
     display: inline-block;
     margin: 0 2px;/* top right bottom left */
-    background-color: bisque;
+    
 }
 
 nav *:hover {
@@ -97,11 +97,12 @@ main {
     grid-row-start: 1;
     grid-row-end: 2;*/
     grid-area: texto1;
-    background-color: blueviolet;
+    overflow: scroll;
 }
 .primer-parrafo * {
     width: 100%;
     height: 100%;
+    
 }
 .segundo-parrafo{
     /*grid-column-start: 2;
@@ -109,7 +110,7 @@ main {
     grid-row-start: 2;
     grid-row-end: 3;*/
     grid-area: texto2;
-    background-color: blue;
+    overflow: scroll;
 }
 .segundo-parrafo * {
     width: 100%;
@@ -156,10 +157,6 @@ main {
     width: 50%;
 }
 
-.container-final :nth-child(1) {
-    display: flex;
-   justify-content: center; 
-}
 
 .container-final form {
     display: flex;
