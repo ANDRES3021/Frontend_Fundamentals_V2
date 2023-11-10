@@ -1,23 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script async defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </head>
-  <body class="m-4/5">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script async defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="m-4/5">
     <header id="container" class="d-inline-block container-fluid bg-secondary fs-5" style="font-size: 18px;">
-      <nav class="p-1 d-flex column-gap-3 justify-content-evenly">
-          <div class="option alineado"><a href="index.html">Home</a></div>
-          <div class="option"><a href="aboutus.html">About Us</a></div>
-          <div class="option"><a href="products.html">Productos</a></div>
-          <div class="option"><a href="services.html">Servicios</a></div>
-          <div class="option"><a href="reviews.html">Reviews</a></div>
-          <div class="option segundo"><a href="blog.html">Blog</a></div>
-      </nav>
+        <nav class="navbar navbar-expand-lg bg-info">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
-  </body>
+    <main>
+        <section id="container-main">
+            <div class="container-image">
+                <img src="https://cdn-3.expansion.mx/dims4/default/70dad84/2147483647/strip/true/crop/746x467+0+0/resize/1800x1127!/format/webp/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1a%2F32%2Fb99c1319450c83b3475735fad1ee%2Finteligencia-artificial-empresas-mexico.jpg"
+                    alt="servers">
+            </div>
+
+            <div class="primer-parrafo">
+                <h4>¿Qué es la Inteligencia Artificial?</h4>
+                <p>
+                    ¿Somos conscientes de los retos y principales aplicaciones de la Inteligencia Artificial?
+                    Hace tiempo que la inteligencia artificial abandonó el espectro de la ciencia ficción para colarse
+                    en nuestras vidas y, aunque todavía en una fase muy inicial, está llamada a protagonizar una
+                    revolución equiparable a la que generó Internet. Sus aplicaciones en múltiples sectores —como salud,
+                    finanzas, transporte o educación, entre otros— han provocado que la Unión Europea desarrolle sus
+                    propias Leyes de la Robótica.</p>
+            </div>
+            <div class="segundo-parrafo">
+                <h4>Tipos de Inteligencia Artificial</h4>
+                <p>
+                    Los expertos en ciencias de la computación Stuart Russell y Peter Norvig diferencian varios tipos de
+                    inteligencia artificial:
+                    Sistemas que piensan como humanos
+                    Automatizan actividades como la toma de decisiones, la resolución de problemas y el aprendizaje. Un
+                    ejemplo son las redes neuronales artificiales.
+
+                    Sistemas que actúan como humanos
+                    Se trata de computadoras que realizan tareas de forma similar a como lo hacen las personas. Es el
+                    caso de los robots.
+
+                    Sistemas que piensan racionalmente
+                    Intentan emular el pensamiento lógico racional de los humanos, es decir, se investiga cómo lograr
+                    que las máquinas puedan percibir, razonar y actuar en consecuencia. Los sistemas expertos se
+                    engloban en este grupo.
+
+                    Sistemas que actúan racionalmente
+                    Idealmente, son aquellos que tratan de imitar de manera racional el comportamiento humano, como los
+                    agentes inteligentes.
+
+                    Aplicaciones prácticas de la Inteligencia Artificial
+                    La IA está presente en la detección facial de los móviles, en los asistentes virtuales de voz como
+                    Siri de Apple, Alexa de Amazon o Cortana de Microsoft y está integrada en nuestros dispositivos
+                    cotidianos a través de bots (abreviatura de robots) o aplicaciones para móvil, tales como:
+                    LyliEnlace externo, se abre en ventana nueva., un personal shopper en versión digital; ParlaEnlace
+                    externo, se abre en ventana nueva., concebida para ayudarnos con el aprendizaje de idiomas;
+                    EmsEnlace externo, se abre en ventana nueva., diseñada para hacernos un poco más llevadera la ardua
+                    tarea de encontrar nuevo piso; o GyantEnlace externo, se abre en ventana nueva., un asistente
+                    virtual de Facebook que emite 'diagnósticos' médicos. El objetivo de todas ellas: hacer más fácil la
+                    vida de las personas.
+
+                    Los avances en IA ya están impulsando el uso del big data debido a su habilidad para procesar
+                    ingentes cantidades de datos y proporcionar ventajas comunicacionales, comerciales y empresariales
+                    que la han llevado a posicionarse como la tecnología esencial de las próximas décadas. Transporte,
+                    educación, sanidad, cultura... ningún sector se resistirá a sus encantos.
+
+                </p>
+            </div>
+            <div class="video1">
+                <iframe width="1164" height="655" src="https://www.youtube.com/embed/YUZoeRTRFyU"
+                    title="¿La inteligencia artificial amenaza la identidad humana? | DW Documental" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+
+
+        </section>
+    </main>
+</body>
+
 </html>
