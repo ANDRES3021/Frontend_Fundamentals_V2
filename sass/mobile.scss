@@ -1,0 +1,36 @@
+@media screen and (max-width: 600px) {
+
+    #container {
+      background-color: bisque;
+    }
+  
+    nav {
+      flex-direction: column;
+      
+      * {
+          width: 100%;
+          text-align: center;
+          margin: 8px 0;
+      }
+  }
+  
+    #container-main {
+        grid-template-columns: $configuration-container-main-mobile-columns;
+        grid-template-rows: $configuration-container-main-mobile-rows;
+        grid-template-areas: $configuration-container-main-mobile-areas;
+        height: auto;
+        gap: 0;
+        
+        .primer-parrafo {
+          min-height: 50px;
+          overflow-y: scroll;
+        }
+    }
+  
+  
+    .container-accionables {
+        flex-direction: column;
+        gap:8px;
+        margin-bottom: 16px;
+    }
+  }
